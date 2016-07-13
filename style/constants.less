@@ -1,0 +1,57 @@
+/**
+ * Created by Manuel Garni on 04.03.16.
+ */
+/*
+ * Farben siehe https://www.google.com/design/spec/style/color.html#color-color-palette
+ * Gelb, Orange, Rot sind appetitanregend
+ */
+/* Farbenpool */
+@farbe__orange900: #E65100;
+@farbe__orange800: #FF9800;
+@farbe__orange200: #FFCC80;
+@farbe__deepOrange800: #D84315;
+@farbe__red500: #F44336;
+@farbe__yellow500: #FFEB3B;
+@farbe__white: #ffffff;
+@farbe__black: #000000;
+@farbe__blueGrey200: #B0BEC5;
+@farbe__blueGrey500: #607D8B;
+@farbe__blueGrey800: #37474F;
+@farbe__saitenbacher: #1e46b7;
+@farbe__saitenbacherHeller: #1e46a3;
+@farbe__hell--inaktiv: rgba(255, 255, 255, 0.5);
+/* Farbenzuweisung */
+@farbe__hintergrund: #f4f7f9;//Blue Grey 50 heller
+@farbe__normal--hell: @farbe__white;
+@farbe__normal--dunkel: @farbe__black;
+@farbe__link--dunkel: @farbe__red500;
+@farbe__link--hell: @farbe__orange800;
+@farbe__link--hell--hover: @farbe__orange900;
+@farbe__link--hell--active: @farbe__deepOrange800;
+@farbe__link--nav: @farbe__hintergrund;
+@farbe__link--nav--hover: @farbe__blueGrey500;
+@farbe__link--nav--active: @farbe__blueGrey800;
+@farbe__header: @farbe__saitenbacherHeller;
+@farbe__footer: @farbe__saitenbacher;
+@farbe__page1: @farbe__orange200;
+@farbe__page2: @farbe__yellow500;
+/*
+ * Schatten siehe https://www.google.com/design/spec/what-is-material/elevation-shadows.html#elevation-shadows-shadows
+ * Author: Florian Kutschera (@gefangenimnetz), Conceptboard GmbH (@conceptboardapp)
+ * https://medium.com/@Florian/freebie-google-material-design-shadow-helper-2a0501295a2d#.y87d7n20d
+ */
+.BoxShadow(1){
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.BoxShadow(2){
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.BoxShadow(3) {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.BoxShadow(4) {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.BoxShadow(5) {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}

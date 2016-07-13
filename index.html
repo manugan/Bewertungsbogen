@@ -1,0 +1,191 @@
+<!doctype html>
+<!--
+  Created by Manuel Garni on 03.03.16.
+-->
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Bewertungsbogen</title>
+    <!-- Kein Zoomen auf mobilen Geräten erlaubt, da es nicht erforderlich sein sollte, zum ändern maximum-scale erhöhen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Android: zum Startbildschirm hinzufügen -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="img/icon-android.png">
+    <meta name="theme-color" content="#1e46b7">
+    <!-- iOS: zum Startbidschirm hinzufügen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1e46b7">
+    <meta name="apple-mobile-web-app-title" content="Bewertungsbogen">
+    <link rel="apple-touch-icon-precomposed" href="img/icon-apple.png">
+    <!-- main Stylesheet -->
+    <link rel="stylesheet" href="style/main.css"/>
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="style/icons/iconFont.css"/>
+    <!-- Roboto Font Stylesheet -->
+    <link rel="stylesheet" href="style/fonts/robotoFont.css"/>
+</head>
+<body>
+<!-- kein Javascript aktiviert -->
+<noscript id="noscriptfull">
+    Diese Website funktioniert, so wie jede andere, nicht ohne JavaScript.
+</noscript>
+<!-- START page -->
+<div id="page">
+    <!-- START Error Container -->
+    <div id="error">
+        <header>
+            <h2><i class="material-icons md-36">error</i> Ein Fehler ist aufgetreten!</h2>
+            <div id="error--message">
+                <i class="material-icons">sync_problem</i>
+                Ein unbekannter Fehler ist aufgetreten!
+            </div>
+        </header>
+    </div>
+    <!-- ENDE Error Container -->
+    <!-- START Page Header -->
+    <header id="header">
+        <ul class="header__flexContainer">
+            <!-- Logo und Name -->
+            <li class="header__flexContainer--item">
+                <i class="material-icons md-48">thumbs_up_down</i>
+                <h1>Bewertunsbogen</h1>
+            </li>
+            <!-- Bestellinfo -->
+            <li class="header__flexContainer--item">
+                <h4>für Präsentationen und Fachgespräche</h4>
+            </li>
+            <!-- Impressumslink -->
+            <li class="header__flexContainer--item">
+                <a onclick="Navigate.show.impressum();" class="header__flexContainer--item--link"><i
+                        class="material-icons md-18">info</i>Kontakt und Impressum</a>
+            </li>
+        </ul>
+    </header>
+    <!-- ENDE Page Header -->
+    <!--
+     START Subpage Wrapper
+     enthält alle Unterseiten sowie Impressumseite
+     -->
+    <div id="page--wrapper">
+        <!-- START Page Content -->
+        <div id="content" class="pageContainer page__status--normal">
+            <!-- START Page Navigation -->
+            <nav id="nav">
+                <ul class="nav__flexContainer">
+                    <li class="nav__flexContainer--item"><a href="#info"><i
+                            class="material-icons md-36">view_day</i>
+                        <p>Präsentation</p></a></li>
+                    <li class="nav__flexContainer--item"><a href="#artikel"><i class="material-icons md-36">record_voice_over</i>
+                        <p>Fachgespräch</p></a></li>
+                    <li class="nav__flexContainer--item"><a href="#bestellen"><i class="material-icons md-36">donut_small</i>
+                        <p>Ergebnis</p></a></li>
+                </ul>
+            </nav>
+            <!-- ENDE Page Navigation -->
+            <div id="page1" class="pageContainer">
+                <!-- Info Anchor -->
+                <a id="info"></a>
+                <div class="pageContainer--content">
+
+                </div>
+            </div>
+            <div id="page2" class="pageContainer">
+                <div class="pageContainer--content" id="fachgespräch__liste">
+                    <div id="artikel"></div>
+                    <h1><i class="material-icons md-36">record_voice_over</i>Fachgespräch</h1>
+                </div>
+            </div>
+            <div id="page3" class="pageContainer">
+                <div class="pageContainer--content">
+                    <div id="bestellen"></div>
+                    <h1><i class="material-icons md-36">donut_small</i>Ergebnis</h1>
+
+                </div>
+            </div>
+        </div>
+        <!-- ENDE Page Content -->
+        <!-- START Impressum Content -->
+        <div id="impressum" class="pageContainer">
+            <!-- START Page Navigation -->
+            <nav>
+                <ul class="nav__flexContainer">
+                    <li class="nav__flexContainer--item"><a href="#" onclick="Navigate.show.main();"><i
+                            class="material-icons  md-36">arrow_back</i> Zurück</a></li>
+                </ul>
+            </nav>
+            <!-- ENDE Page Navigation -->
+            <section class="pageContainer--content">
+                <header><h1>Kontakt</h1></header>
+                <p>ToDo vor Inbetriebnahme: Rechtssicheres Impressum und Kontaktdaten eintragen</p>
+                <h2>Verwendete Ressourcen</h2>
+                <div class="tableContainer tableContainer--header">
+                    <div class="tableContainer__cell tableContainer__cell--left">Name</div>
+                    <div class="tableContainer__cell tableContainer__cell--right">Material design icons</div>
+                </div>
+                <div class="tableContainer">
+                    <div class="tableContainer__cell tableContainer__cell--left">URL</div>
+                    <div class="tableContainer__cell tableContainer__cell--right"><a
+                            href="https://github.com/google/material-design-icons" target="_blank">
+                        https://github.com/google/material-design-icons</a></div>
+                </div>
+                <div class="tableContainer">
+                    <div class="tableContainer__cell tableContainer__cell--left">Version</div>
+                    <div class="tableContainer__cell tableContainer__cell--right">2.2.0</div>
+                </div>
+                <div class="tableContainer">
+                    <div class="tableContainer__cell tableContainer__cell--left">Lizenz</div>
+                    <div class="tableContainer__cell tableContainer__cell--right"><a
+                            href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Common
+                        Attribution 4.0 International License (CC-BY 4.0)</a></div>
+                </div>
+                <div class="tableContainer tableContainer--header">
+                    <div class="tableContainer__cell tableContainer__cell--left">Name</div>
+                    <div class="tableContainer__cell tableContainer__cell--right">Roboto Schriftart von Christian
+                        Robertson
+                    </div>
+                </div>
+                <div class="tableContainer">
+                    <div class="tableContainer__cell tableContainer__cell--left">URL</div>
+                    <div class="tableContainer__cell tableContainer__cell--right"><a
+                            href="http://www.apache.org/licenses/LICENSE-2.0.html" target="_blank">http://www.apache.org/licenses/LICENSE-2.0.html</a>
+                    </div>
+                </div>
+                <div class="tableContainer">
+                    <div class="tableContainer__cell tableContainer__cell--left">Version</div>
+                    <div class="tableContainer__cell tableContainer__cell--right">2.0</div>
+                </div>
+                <div class="tableContainer">
+                    <div class="tableContainer__cell tableContainer__cell--left">Lizenz</div>
+                    <div class="tableContainer__cell tableContainer__cell--right"><a
+                            href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">http://www.apache.org/licenses/LICENSE-2.0</a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!-- ENDE Impressum Content -->
+    </div>
+    <!-- ENDE Subpage Wrapper -->
+    <!-- START Page Footer -->
+    <footer id="footer">
+        <form action="#">
+            <ul class="footer__flexContainer">
+                <li class="footer__flexContainer--item">
+                    <a onclick="Navigate.show.impressum(); return false;"><i
+                            class="material-icons ">info</i>Impressum</a>
+                </li>
+                <li class="footer__flexContainer--item">
+                    <a href="#page"><i class="material-icons md-60">keyboard_arrow_up</i></a>
+                </li>
+            </ul>
+        </form>
+    </footer>
+    <!-- ENDE Page Footer -->
+</div>
+<!-- ENDE Page -->
+<!-- main: Navigation -->
+<script src="js/main.js"></script>
+</body>
+</html>

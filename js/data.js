@@ -5,7 +5,7 @@
 /*
  * Globale Namespacess
  */
-var Kriterien = Kriterien || {};
+//var Kriterien = Kriterien || {};
 
 
 /* relativer Serverpfad zu JSON Handler */

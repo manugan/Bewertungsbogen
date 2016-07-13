@@ -11,8 +11,6 @@
 /* relativer Serverpfad zu JSON Handler */
 var linkToServer = "/kriterienListe.json";
 
-/* Kriterien abrufen und anzeigen */
-Kriterien.listeAbrufen();
 
 /**
  * Kriterien
@@ -72,3 +70,7 @@ Kriterien = {
         }
     }
 };
+
+
+/* Kriterien abrufen und anzeigen */
+Kriterien.listeAbrufen();

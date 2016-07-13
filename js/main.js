@@ -19,13 +19,9 @@ Navigate.show = {
         main.style.display = "block";
     },
     impressum: function () {
-        if (Bestellung.session.isActive == false) {
             Navigate.hideAll();
             var impressum = document.getElementById("impressum");
             impressum.style.display = "block";
-        } else {
-            alert("Bitte beende zuerst deine Bestellung oder breche diese Ab, um das Impressum aufzurufen!");
-        }
     }
 };
 

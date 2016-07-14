@@ -360,17 +360,6 @@ display: none
     .tableContainer {
         flex-wrap: wrap;
     }
-    .tableContainer__add {
-        flex-direction: row !important;
-        margin-left: auto !important;
-    }
-    .tableContainer__add p {
-        line-height: 2em !important;
-    }
-    #bestellung__liste .tableContainer__cell--price {
-        width: 25%;
-        padding-left: 25%;
-    }
     .tableContainer__cell--name {
         width: 100% !important;
     }
@@ -392,8 +381,7 @@ display: none
 }
 /* ENDE Tabellen generell*/
 /* START Bestellung Artikelauswahl */
-.tableContainer__add a,
-.bestellung__übersicht a {
+.tableContainer__add a {
     color: @farbe__blueGrey800;
     margin-left: .1em;
 }
@@ -414,100 +402,3 @@ display: none
     font-weight: bold;
     font-size: 1.1em;
 }
-/* Bestellung Artikelliste Artikelart */
-.tableContainer__cell--art {
-    width: 14em;
-    font-weight: 100;
-    text-transform: uppercase;
-    font-size: 1.1em;
-}
-/* Bestellung Artikelliste Unterteilung für Art, Inhaltsstoffe und Mehrwertsteuersatz */
-.tableContainer__sub {
-    display: inline-flex;
-    margin: .5em;
-    flex-direction: column;
-    align-items: flex-start;
-}
-/* Bestellung Artikelliste Inhaltsstoffe */
-.tableContainer__cell--inhalt {
-    font-size: .7em;
-}
-/* Buttons Artikel hinzufügen/entfernen */
-.tableContainer__add {
-    margin: 0;
-    display: inline-flex;
-    flex-direction: column;
-}
-/* enthält Anzahl des jeweiligen Artikels in Bildliste */
-.tableContainer__add p {
-    margin: 0 .1em 0 0;
-    font-size: 2em;
-    line-height: 1em;
-    text-align: center;
-}
-/* ENDE Bestellung Artikelauswahl */
-/* START Bestellung Übersicht */
-.bestellung__übersicht .tableContainer {
-    margin-bottom: 0;
-    border-radius: 0;
-    font-size: 1.2em;
-    padding: .6em 0;
-}
-/* ENDE Bestellung Übersicht */
-/* START Bestellung Kunde */
-.tableContainer__kunde {
-    flex-direction: column;
-    max-width: 50em;
-    margin: 0 auto;
-    padding: 1em 0;
-    .BoxShadow(2);
-    background-color: @farbe__page1;
-}
-.tableContainer__kunde--liefern {
-    background-color: @farbe__page2 !important;
-}
-.tableContainer__cell--input {
-    font-size: 1.2em;
-    padding: .4em;
-}
-@media (max-width: 600px) {
-    .tableContainer__cell--input {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-.tableContainer__cell--input label {
-    font-weight: bold;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-}
-.tableContainer__cell--input input {
-    margin-left: auto;
-    border-radius: .2em;
-    border: 5px inset;
-    .BoxShadow(2);
-    font-size: larger;
-    background-color: @farbe__orange200;
-}
-.tableContainer__kunde--liefern {
-    flex-direction: row;
-}
-.tableContainer__kunde--liefern .tableContainer__cell--input input,
-#speichern {
-    box-shadow: none;
-    margin: 0 1em;
-}
-input[type="checkbox"],
-input[type="radio"] {
-    display: inline-flex;
-    width: 1em;
-    height: 1em;
-}
-/* ENDE Bestellung Kunde */
-/* START Bestellung Übersicht */
-#bestellung__kundendaten--ende input {
-    border: none;
-    box-shadow: none;
-}
-/* ENDE Bestellung Übersicht */

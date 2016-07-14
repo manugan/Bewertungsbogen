@@ -14,6 +14,7 @@ style/icons/MaterialIcons-Regular.woff2
 style/constants.css
 style/main.css
 index.html
+manifest.json
 style/fonts/Roboto-BoldItalic-webfont.eot
 style/fonts/Roboto-BoldItalic-webfont.svg
 style/fonts/Roboto-BoldItalic-webfont.ttf
@@ -55,4 +56,3 @@ style/fonts/Roboto-Thin-webfont.eot
 style/fonts/Roboto-Thin-webfont.svg
 style/fonts/Roboto-Thin-webfont.ttf
 style/fonts/Roboto-Thin-webfont.woff
-manifest.json

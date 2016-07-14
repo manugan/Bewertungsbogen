@@ -78,6 +78,13 @@ nav a:active {
     text-transform: uppercase;
     background-color: @farbe__orange800;
 }
+
+select {
+    font-size: 130%;
+}
+.button__hell option {
+    color: white;
+}
 /* Standard-Button rechtsbündig, wenn nicht in Navigationsbar */
 .button__hell--bottom {
     margin: 1.7em 1em 1.7em 50%;
@@ -119,10 +126,6 @@ nav {
     width:100%;
 }
 #impressum,
-#bestellung,
-#kundendaten,
-#ende,
-#übersicht,
 #error{
 display: none
 }
@@ -162,9 +165,10 @@ display: none
     margin: 0 .3em .3em 0;
 
 }
-.header__flexContainer--item h4 {
+.header__flexContainer--item h3 {
     margin: 0 .3em 0 1.2em;
     font-weight: normal;
+
 }
 .header__flexContainer--item img {
     width: 100%;
@@ -254,7 +258,7 @@ display: none
 /* START Page 2 Speisekarte */
 #page2 {
     min-height: 70vh;
-    background-color: @farbe__page2;
+    //background-color: @farbe__page2;
 }
 /* Großes Artikelbild, dynamisch hinzugefügt */
 .artikel__bild--groß {
@@ -269,8 +273,20 @@ display: none
 #page3 .pageContainer--content {
     text-align: center;
 }
-#button__bestellung--start {
-    font-size: 1.4em;
+#ergebnis__summe,
+.tableContainer__cell--ergebnis,
+.summe__markup {
+    font-size: 180%;
+    border-radius: 2px;
+    transition: .2s;
+    display: inline-block;
+    padding: 0 .3rem;
+    min-width: 2em;
+    text-align: center;
+    border: 2px solid #ff9a00;
+    font-weight: 400;
+    margin: 0 .5rem;
+
 }
 /* ENDE Page 3 */
 /* START Page Footer */
@@ -361,7 +377,7 @@ display: none
 }
 .tableContainer__cell {
    // flex: 1 auto;
-    margin: 0 .5em;
+    margin: 0 .5rem;
     align-items: center;
     //width: 50%;
     display: flex;

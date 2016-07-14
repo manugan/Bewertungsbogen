@@ -1,0 +1,58 @@
+{
+  "praesentation": {
+    "0": {
+      "name": "zielgruppenorientierte Darstellung der Projektarbeit",
+      "gewichtung": 2.0
+    },
+    "1": {
+      "name": "zielgruppenorientierte Verwendung von Fachbegriffen",
+      "gewichtung": 1.0
+    },
+    "2": {
+      "name": "Aufbau und Gliederung des Vortrages",
+      "gewichtung": 3.0
+    },
+    "3": {
+      "name": "Gestaltung der schriftlichen Präsentationsunterlagen",
+      "gewichtung": 1.0
+    },
+    "4": {
+      "name": "Einsatz der Präsentationsmittel",
+      "gewichtung": 2.0
+    },
+"5": {
+  "name": "Einhaltung des zeitlichen Rahmens",
+  "gewichtung": 1.0
+}
+  },
+  "fachgespraech": {
+    "0": {
+      "name": "zielgruppenorientierte Beantwortung der Fragen",
+      "gewichtung": 2.5
+    },
+    "1": {
+        "name": "Verwendung zutreffender Fachbegriffe",
+      "gewichtung": 1.0
+    },
+    "2": {
+      "name": "Aufzeigen fachlicher Hintergründe",
+      "gewichtung": 1.0
+    },
+    "3": {
+      "name": "Begründung der Vorgehensweise im Projekt",
+      "gewichtung": 1.5
+    },
+    "4": {
+      "name": "Erklärung und begründung der Qualitätsstandard",
+      "gewichtung": 1.0
+    },
+    "5": {
+      "name": "flüssige und verständliche Ausdrucksweise",
+      "gewichtung": 1.5
+    },
+    "6": {
+      "name": "Flexibilität und Wendigkeit im Gespräch",
+      "gewichtung": 1.5
+    }
+  }
+}

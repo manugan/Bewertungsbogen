@@ -2,7 +2,7 @@
 <!--
   Created by Manuel Garni on 03.03.16.
 -->
-<html>
+<html manifest="bewertungsbogen.appcache">
 <head>
     <meta charset="utf-8"/>
     <title>Bewertungsbogen</title>
@@ -19,6 +19,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#1e46b7">
     <meta name="apple-mobile-web-app-title" content="Bewertungsbogen">
     <link rel="apple-touch-icon-precomposed" href="img/icon-apple.png">
+
+    <!-- manifest for web app style, manifest for offline use set in html tag -->
+    <link rel="manifest" href="manifest.json">
+
     <!-- main Stylesheet -->
     <link rel="stylesheet" href="style/main.css"/>
     <!-- Icon Font Stylesheet -->
@@ -50,16 +54,15 @@
             <!-- Logo und Name -->
             <li class="header__flexContainer--item">
                 <i class="material-icons md-48">thumbs_up_down</i>
-                <h1>Bewertunsbogen</h1>
+                <h1>Bewertunsbogen Offline Web App</h1>
             </li>
             <!-- Bestellinfo -->
             <li class="header__flexContainer--item">
-                <h4>für Präsentationen und Fachgespräche</h4>
+                <h3>für Präsentationen und Fachgespräche - zum Startbildschirm hinzufügen für Offlinefähigkeit</h3>
             </li>
             <!-- Impressumslink -->
             <li class="header__flexContainer--item">
-                <a onclick="Navigate.show.impressum();" class="header__flexContainer--item--link"><i
-                        class="material-icons md-18">info</i>Kontakt und Impressum</a>
+               <h4><i>Stand 14.07.2016</i></h4>
             </li>
         </ul>
     </header>
@@ -91,9 +94,10 @@
                 </div>
             </div>
             <div class="pageContainer page__dark">
-                <div class="pageContainer--content" id="praesentation__liste">
-                    <h1><i class="material-icons md-36">add_box</i>Summe Präsentation</h1>
-                    <h2 id="praesentation__summe">0</h2>
+                <div class="pageContainer--content">
+                    <h3><i class="material-icons md-36">add_box</i>Summe Präsentation
+                        <span id="praesentation__summe" class="summe__markup">0</span>
+                    </h3>
                 </div>
             </div>
             <div id="page2" class="pageContainer">
@@ -102,10 +106,29 @@
                     <h1><i class="material-icons md-36">record_voice_over</i>Fachgespräch</h1>
                 </div>
             </div>
+            <div class="pageContainer page__dark">
+                <div class="pageContainer--content">
+                    <h3><i class="material-icons md-36">add_box</i>Summe Fachgespräch
+                        <span id="fachgespraech__summe" class="summe__markup">0</span>
+                    </h3>
+                </div>
+            </div>
             <div id="page3" class="pageContainer">
                 <div class="pageContainer--content">
                     <div id="ergebnis"></div>
                     <h1><i class="material-icons md-36">donut_small</i>Ergebnis</h1>
+                    <h4>von Präsentation und Fachgespräch</h4>
+                    <h2>
+                    (
+                    <span id="praesentation__summe__ergebnis">0</span>
+                    +
+                    <span id="fachgespraech__summe__ergebnis">0</span>
+                    ) : 2 =
+                    <span id="ergebnis__summe">0</span>
+                    </h2>
+
+                    <a class="button__hell" href="index.html"><i class="material-icons">autorenew</i>Eingaben zurücksetzten </a>
+
 
                 </div>
             </div>
@@ -123,7 +146,11 @@
             <!-- ENDE Page Navigation -->
             <section class="pageContainer--content">
                 <header><h1>Kontakt</h1></header>
-                <p>ToDo vor Inbetriebnahme: Rechtssicheres Impressum und Kontaktdaten eintragen</p>
+                <p>Manuel Garni</p>
+                <p>Azenbergstr. 12a</p>
+                <p>88677 Markdorf</p>
+                <p>manuel.garni |ät| outlook.com</p>
+                <p>0049 1578 836 5318</p>
                 <h2>Verwendete Ressourcen</h2>
                 <div class="tableContainer tableContainer--header">
                     <div class="tableContainer__cell tableContainer__cell--left">Name</div>

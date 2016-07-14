@@ -10,8 +10,8 @@ Abrufbar unter https://bewertung.azurewebsites.net
 
 
 ## Bei Änderungen und Weiterentwicklungen
-muss der Inhalt der Datei *bewertungsbogen.appcache* geändert werden, wenn keine neuen Datein hinzugefügt wurden reicht ein ändern des Datusm in der zweiten Zeile.
-Ansonsten die Namen der neu hinzugekommene/gelöschten Seiten in der Datei einfügen/löschen.
+muss der Inhalt der Datei *bewertungsbogen.appcache* geändert werden, wenn keine neuen Datein hinzugefügt wurden reicht ein ändern des Datums in der zweiten Zeile.
+Ansonsten die Namen der neu hinzugekommene/gelöschten Seiten in der Datei einfügen/löschen. Weitere Infos bzgl. Caching siehe http://www.html5rocks.com/de/tutorials/appcache/beginner/
 ### Kriterien für die Bewertung
 können in *kriterienListe.json* angepasst werden. Die Bewertungsoptionen (10, 9.5, 9, 8, 7, .. Punkte) können im oberen Bereich der Datei *js/data.js* geändert werden.
 

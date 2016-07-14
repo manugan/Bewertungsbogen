@@ -8,8 +8,23 @@
  */
 var Navigate = Navigate || {};
 
+
+
+Navigate = {
+    /**
+     * Navigate.hideAll
+     * Versteckt alLe Unterseiten, scrollt zum Anfang der Seite
+     */
+    hideAll: function() {
+        var impressum = document.getElementById("impressum");
+        impressum.style.display= "none";
+        var main = document.getElementById("content");
+        main.style.display = "none";
+        window.scrollTo(0,0);
+    }
+};
 /**
- * Navigatation Anzeige
+ * Navigation Anzeige
  * @type {{main: Navigate.show.main, impressum: Navigate.show.impressum}}
  */
 Navigate.show = {

@@ -259,6 +259,11 @@ nav {
   }
 }
 /* ENDE Error Container */
+/* Summmenseite */
+.page__dark {
+  color: white;
+  background-color: black;
+}
 /* START Page 1 Information */
 #page1 {
   min-height: 70vh;
@@ -334,10 +339,7 @@ nav {
 /* ENDE Impressum */
 /* START Tabellen generell */
 .tableContainer {
-  display: flex;
   margin-bottom: 1em;
-  justify-content: center;
-  flex-direction: row;
   width: 100%;
   border-radius: .3em;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -376,9 +378,13 @@ nav {
   }
 }
 .tableContainer__cell {
-  display: inline-flex;
   margin: 0 .5em;
   align-items: center;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .tableContainer__cell--right {
   margin-left: auto;
@@ -391,7 +397,7 @@ nav {
   margin-left: .1em;
 }
 .tableContainer__cell--name {
-  width: 30%;
+  width: 20rem;
   font-size: 1.8em;
 }
 /* Bestellung Artikelliste Artikelfoto */
@@ -403,8 +409,7 @@ nav {
   margin-left: -0.5em;
 }
 /* Bestellung Artikelliste Artikelpreis */
-.tableContainer__cell--price {
-  margin-left: auto;
+.tableContainer__cell--gewichtung {
   font-weight: bold;
   font-size: 1.1em;
 }

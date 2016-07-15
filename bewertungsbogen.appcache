@@ -1,5 +1,6 @@
 CACHE MANIFEST
-#2016-07-14 change the date for the browser to reload cached stuff
+#2016-07-15 change the date or number for the browser to reload cached stuff
+#v4
 img/icon-android.png
 img/icon-apple.png
 js/data.js
@@ -14,6 +15,7 @@ style/icons/MaterialIcons-Regular.woff2
 style/constants.css
 style/main.css
 index.html
+favicon.ico
 manifest.json
 style/fonts/Roboto-BoldItalic-webfont.eot
 style/fonts/Roboto-BoldItalic-webfont.svg

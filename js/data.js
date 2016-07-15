@@ -23,35 +23,36 @@ Kriterien = {
     listePraesentation: [],
     generateOptions: function (selectItem) {
         var option = document.createElement("option");
-        option.text = "0";
-        selectItem.add(option);
-        option = document.createElement("option");
-        option.text = "3";
-        selectItem.add(option);
-        option = document.createElement("option");
-        option.text = "4";
-        selectItem.add(option);
-        option = document.createElement("option");
-        option.text = "5";
-        selectItem.add(option);
-        var option = document.createElement("option");
-        option.text = "6";
-        selectItem.add(option);
-        option = document.createElement("option");
-        option.text = "7";
-        selectItem.add(option);
-        option = document.createElement("option");
-        option.text = "8";
-        selectItem.add(option);
-        option = document.createElement("option");
-        option.text = "9";
+        option.text = "10";
         selectItem.add(option);
         option = document.createElement("option");
         option.text = "9.5";
         selectItem.add(option);
         option = document.createElement("option");
-        option.text = "10";
+        option.text = "9";
         selectItem.add(option);
+        option = document.createElement("option");
+        option.text = "8";
+        selectItem.add(option);
+        option = document.createElement("option");
+        option.text = "7";
+        selectItem.add(option);
+        option = document.createElement("option");
+        option.text = "6";
+        selectItem.add(option);
+        option = document.createElement("option");
+        option.text = "5";
+        selectItem.add(option);
+        option = document.createElement("option");
+        option.text = "4";
+        selectItem.add(option);
+        option = document.createElement("option");
+        option.text = "3";
+        selectItem.add(option);
+        option = document.createElement("option");
+        option.text = "0";
+        selectItem.add(option);
+        selectItem.selectedIndex = 9;
 
     },
     /**

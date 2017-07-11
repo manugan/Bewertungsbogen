@@ -1,13 +1,14 @@
 # Bewertungsbogen
 Bewertungsbogen für Präsentationen und Fachgespräche. Maximal 100 Punkte pro Rubrik durch gewichtete Fragen und Punktebereich von 0 bis 10 möglich.
+
+**Abrufbar unter https://manugan.github.io/Bewertungsbogen/**
+
 ### Offlinefähig, Größe ca 2MB
 <img alt="Screenshot Hauptseite" src="http://manugan.github.io/Bewertungsbogen/screenshots/Screenshot_20160727-085556.png" width="400px" />
 
 ## Zur Benutzung als App
 unter **Android - Chrome** - Seite aufrufen und in den Optionen 'Zum Startbildschirm hinzufügen' auswählen.
 **iOS - Safari** - 'Teilen'-Button unten mittig und dann 'Zum Home-Bildschirm' auswählen
-
-Abrufbar unter https://bewertung.azurewebsites.net
 
 
 ## Bei Änderungen und Weiterentwicklungen
